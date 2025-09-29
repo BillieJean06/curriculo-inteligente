@@ -1,0 +1,18 @@
+[
+  {
+    "cargo": "Desenvolvedor Frontend",
+    "empresa": "Empresa A",
+    "periodo": "Jan 2022 - Atual",
+    "descricao": "Desenvolvimento de aplicações em Vue.js, integração com REST APIs.",
+    "area": "Frontend",
+    "habilidades": ["Vue", "Vuetify", "JavaScript", "HTML", "CSS"]
+  },
+  {
+    "cargo": "Desenvolvedor Backend",
+    "empresa": "Empresa B",
+    "periodo": "Jan 2020 - Dez 2021",
+    "descricao": "Desenvolvimento de APIs com Node.js e MongoDB.",
+    "area": "Backend",
+    "habilidades": ["Node.js", "Express", "MongoDB"]
+  }
+]
