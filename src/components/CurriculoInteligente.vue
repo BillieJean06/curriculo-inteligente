@@ -226,7 +226,12 @@
               <v-text-field
                 :label="$t('nome')"
                 v-model="formData.from_name"
-                :rules="[(v) => !!v || $t('campoObrigatorio')]"
+                :rules="[
+                  (v) => !!v || $t('campoObrigatorio'),
+                  (v) =>
+                    (v && v.trim().split(' ').length >= 3) ||
+                    $t('nome & Sobrenome Obrigatorio'),
+                ]"
                 required
               />
               <v-text-field
@@ -234,7 +239,7 @@
                 v-model="formData.reply_to"
                 :rules="[
                   (v) => !!v || $t('campoObrigatorio'),
-                  (v) => /.+@.+\\..+/.test(v) || $t('emailInvalido'),
+                  (v) => /.+@.+\..+/.test(v) || $t('emailInvalido'),
                 ]"
                 required
               />
