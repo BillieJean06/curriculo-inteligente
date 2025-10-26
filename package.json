@@ -8,9 +8,15 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@vercel/node": "^5.5.0",
+    "body-parser": "^2.2.0",
     "core-js": "^3.8.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
     "emailjs-com": "^3.2.0",
+    "express": "^5.1.0",
     "html2pdf.js": "^0.12.1",
+    "nodemailer": "^7.0.10",
     "vue": "^2.7.16",
     "vue-i18n": "^8.28.2",
     "vue-qrcode": "^2.2.2",

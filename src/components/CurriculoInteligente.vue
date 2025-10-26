@@ -50,7 +50,7 @@
             <v-list-item>
               <v-list-item-content>
                 <v-list-item-title class="font-weight-bold">
-                  {{ $t("disponivelParaTrabalho") }}:
+                  {{ $t("disponivelParaTrabalho") }}
                 </v-list-item-title>
                 <v-list-item-subtitle>
                   <v-icon :color="disponibilidade ? 'green' : 'red'">
@@ -229,7 +229,7 @@
                 :rules="[
                   (v) => !!v || $t('campoObrigatorio'),
                   (v) =>
-                    (v && v.trim().split(' ').length >= 3) ||
+                    (v && v.trim().split(' ').length >= 2) ||
                     $t('nome & Sobrenome Obrigatorio'),
                 ]"
                 required
@@ -369,7 +369,7 @@ export default {
       window.print();
     },
     async fetchRepos() {
-      const username = "NeegoVeio";
+      const username = "BillieJean06";
       const url = `https://api.github.com/users/${username}/repos?sort=updated&per_page=10`;
 
       try {
